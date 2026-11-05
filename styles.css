@@ -1,0 +1,815 @@
+/*    ORDERING    */
+/*DISPLAY*/
+/*POSITIONING*/
+/*BOX MODEL*/
+/*TYPOGRAPHY*/
+/*MANIPULATION*/
+/*MISC*/
+
+
+
+			body{
+
+				margin: 0;
+				padding: 0;
+
+				color: white;
+				background: black;
+				font-family: 'dosis', sans-serif;
+				cursor: url("images/cursor2.svg"), auto;
+
+					.MainTitle{
+
+						/*DISPLAY*/
+						display: inline-block;
+
+						/*POSITIONING*/
+						position: absolute;
+						top: 45%;
+						left: 25%;
+						z-index: 2;
+
+						/*BOX MODEL*/
+
+						/*TYPOGRAPHY*/
+						text-align: center;
+						letter-spacing: -2px;
+						word-spacing: 4px;
+						text-transform: uppercase;
+						font-weight: 500;
+						font-style: italic;
+						line-height: .7;
+
+						/*MANIPULATION*/
+						transform: translate(-50%, -50%);
+
+					}
+
+					.PageTitle {
+
+						/*DISPLAY*/
+						display: inline-block;
+
+						/*TYPOGRAPHY*/
+						font-size:60px;
+						color: black;
+						backdrop-filter: blur(3px) saturate(70%);
+
+						/*BOX MODEL*/
+						padding: 7px;
+						padding-right: 20px;
+
+					}
+
+					.SubTitle {
+
+						/*DISPLAY*/
+						display: inline-block;
+
+						/*TYPOGRAPHY*/
+						color: black;
+						font-size:xx-large;
+						backdrop-filter: blur(3px) saturate(70%);
+
+						/*BOX MODEL*/
+						padding: 7px;
+						padding-right: 20px;
+
+					}
+
+				/*HEADER*/
+		
+				header {
+
+					/*POSITIONING*/
+					position: relative;
+
+					/*BOX-MODEL*/
+					height: 150px;
+
+					/*padding: 10px; this was originally enabled but I've turned it off cause it hides the image blur at edges*/
+
+				}
+
+				.bg-image{
+
+					/*DISPLAY*/
+
+					/*POSITIONING*/
+					position: relative;
+					z-index: -1;
+
+					/*BOX MODEL*/
+					background-position: center;
+					background-repeat:no-repeat;
+					background-size: cover;
+					height: 100%;
+					background-image: url("images/img0033.jpg");
+					background-color: black;
+
+					/*TYPOGRAPHY*/
+
+					/*MANIPULATION*/
+					filter: blur(2px);
+					-webkit-filter: blur(2px);
+
+					/*MISC*/
+
+				}
+
+				/*NAV BAR*/
+
+				.navbar {
+
+					/*DISPLAY*/
+					display: flex;
+					justify-content: flex-end;
+
+					/*POSITIONING*/
+					position: absolute;
+					top: 90%;
+					left: 45%;
+					z-index: 10;
+
+					/*BOX MODEL*/
+					width: 80%;
+					padding: 10px;
+
+					/*TYPOGRAPHY*/
+					text-decoration: none;
+					text-transform: uppercase;
+					font-weight: 500;
+
+					/*MANIPULATION*/
+					transform: translate(-40%, -180%);
+
+
+					/*MISC*/
+
+				}
+
+				.navbar li {
+
+					/*DISPLAY*/
+					/*POSITIONING*/
+
+					/*BOX MODEL*/
+					background: black;
+					width: auto;
+					margin-left: 20px;
+					padding: 10px;
+
+
+					/*TYPOGRAPHY*/
+					color: white;
+					 text-decoration: none;
+					list-style-type: none;
+
+					/*MANIPULATION*/
+					border-radius: 1.5px;
+
+					/*MISC*/
+					/*curser: pointer;*/
+
+				}
+
+				.navbar li :hover, .navbar li :visited, .navbar li :link, .navbar li :active {
+					text-decoration: none;
+					color: white;
+				}
+
+				nav li:hover {
+
+				background-color: #0097A7;
+
+				}
+
+				.filmssubnav {
+
+					/*POSITIONING*/
+					position: absolute;
+
+					/*BOX MODEL*/
+					margin-left: -40px;
+
+
+				}
+
+				.filmssubnav ul {
+
+					display: block;
+
+					padding: 1em 0.5em;
+
+
+				}
+
+				.filmssubnav ul li {
+
+					width: auto;
+					border-radius: 1.5px;
+
+					list-style-type: none;
+					backdrop-filter: blur(10px) saturate(70%);
+
+
+				}
+		
+
+		/*MAIN PAGE*/
+
+				.main-page {
+
+					display: inline-block;
+
+					position: relative;
+
+
+
+				}
+
+				.about1 {
+
+					margin-left: 21%;
+					margin-right: 21%;
+
+				}
+
+				.about1 h2 {
+
+					text-transform: uppercase;
+					font-size:xx-large;
+					font-weight: 550;
+					font-style: italic;
+
+				}
+
+				.about1 p {
+
+					font-size:24px;
+
+				}
+
+				.container-video{
+
+					/*DISPLAY*/
+					display: block;
+
+					/*POSITIONING*/
+					margin-left: auto;
+					margin-right: auto;
+
+					/*BOX MODEL*/
+					width:992px;
+					height: 558px;
+					padding-top: 30px;
+
+					/*TYPOGRAPHY*/
+					text-align: center;
+
+					/*MANIPULATION*/
+					/*MISC*/
+
+				}
+
+				.dop-image {
+
+					display: block;
+
+					margin-left: auto;
+					margin-right: auto;
+
+					text-align: center;
+
+				}
+
+		/*DOCUMENTARY PAGE*/
+
+
+		.Project-Text {
+
+			text-transform: uppercase;
+			font-size:xx-large;
+			font-weight: 550;
+			font-style: italic;
+
+			padding-left: 80px;
+
+		}
+				.documentary-video{
+					display: flex;
+					flex-direction: column;
+					padding: 1em;
+					padding-left: 0em;
+					text-align: center;
+					border-radius: 8px;
+
+
+
+
+					/*before item was grid
+					display:block;
+
+					margin-left: auto;
+					margin-right: 65%;
+
+					width:992px;
+					height: 558px;
+					padding-top: 30px;
+
+					text-align: left; */
+
+				}
+
+				.documentary-images-grid{
+
+					height: 300px;
+
+					display:grid;
+
+				/*	grid-auto-columns: 280px; */
+
+
+
+
+
+
+
+					grid-template-columns: repeat(auto-fill,  minmax(min(100%, 304px), 1fr));
+					justify-content: center;
+
+
+
+
+					grid-auto-rows: 1fr;
+
+
+
+
+					grid-template-areas:
+					"box-1 box-1 box-2 box-3 box-4"
+					"box-1 box-1 box-5 box-6 box-7"
+					"box-8 box-8 box-9 box-10 box-11"
+					"box-8 box-8 box-12 box-13 box-14"
+					"box-15 box-15 box-16 . . "
+					"box-15 box-15 box-17 . . ";
+
+
+
+					gap: .1em;
+					grid-auto-flow: dense;
+
+
+
+					padding-left: 80px;
+					padding-bottom: 80px;
+
+
+				}
+
+
+				/* NEW IMAGES GRID*/
+
+
+				.parent-grid{
+
+					height: 300px;
+
+					display:grid;
+
+					grid-template-columns: repeat(auto-fit,  minmax(min(640px, 100%), .5em));
+
+					grid-auto-rows: 1fr;
+
+					/*repeat(auto-fill,  300px);*/
+					text-align: left;
+
+
+					gap: 1em 7em;
+					grid-auto-flow: dense;
+
+
+
+					padding-left: 4.5em;
+					padding-bottom: 80px;
+				}
+
+				.video-grid{
+					display:grid;
+				grid-template-columns: repeat(auto-fill,  minmax(min(650px, 100%), .5em));
+				grid-auto-rows: 1fr;
+				grid-auto-flow: dense;
+
+				}
+
+				.parent-grid-DISABLED{
+
+
+
+
+				}
+
+				.new-images-grid{
+
+					flex-grow: 1;
+					min-height: 0;
+
+
+						display:grid;
+
+						grid-template-columns: repeat(auto-fill,  minmax(min(300px, 100%), 1fr));
+
+						grid-auto-rows: 1fr;
+
+						/*repeat(auto-fill,  300px);*/
+
+
+
+						gap: .1em;
+						grid-auto-flow: dense;
+
+
+
+						container-type: inline-size;
+							max-width: 105rem;
+
+							margin-inline: auto;
+							margin-block: 3rem
+
+
+							/*WHEN visually we have  2 COLUMNS */
+
+							}
+
+
+
+					@container (width <= 600px){
+						.grid-container-new {
+
+							grid-column: span 1;
+
+							/*≥*/
+
+							border-color: red;
+						}
+					}
+
+
+					@container (width >= 900px){
+.grid-container-new:first-child{
+	grid-column-end: span 2;
+	grid-row: span 2;
+
+
+
+}
+
+
+					}
+
+					@container (width <= 600px){
+						.grid-container-new:first-child{
+							grid-column: span 1;
+							grid-row: span 1;
+
+							.video-new iframe {
+
+								min-height: 325px;
+
+							}
+
+						}
+					}
+
+
+
+
+
+					.grid-container-new {
+						display: flex;
+						flex-direction: column;
+						padding: .3em;
+						text-align: center;
+
+
+
+
+						/*	max-width:560px;
+						 *max-height:315px;*/
+						/* border-radius: 8px; */
+
+
+
+
+					}
+
+					.grid-container-reels {
+						display: flex;
+						flex-direction: column;
+						padding: .3em;
+						text-align: center;
+						grid-column: span 1;
+					}
+
+
+
+					.grid-item-new {
+						width: 100%;
+						height:100%;
+						position: relative;
+
+
+
+					}
+
+					.grid-item-new .image-new {
+
+						width: 100%;
+						height: 100%;
+						overflow: hidden;
+
+						border-radius: 30px;
+					}
+
+					.grid-item-new .image-new img {
+						/*height: auto;*/
+						height: 100%;
+						width: 100%;
+
+
+
+
+						object-fit: contain;
+						object-position: 50% 50%;
+
+						transition:.3s ease-in-out;
+						cursor: pointer;
+
+					}
+					.grid-item-new:hover .image-new img{
+
+						transform:scale(1.15);
+
+					}
+
+					.grid-item-new:hover .image-new{
+
+
+						box-shadow: 3px 3px 10px black;
+					}
+
+
+					.grid-item-video-new {
+						width: 100%;
+						height: 100%;
+
+						position: relative;
+
+
+					}
+
+					.grid-item-video-new .video-new {
+						/*width: 640px;
+						height: 360px;*/
+						height: 100%;
+						width: 100%;
+						overflow: visible;
+						border-radius: 70px;
+
+
+					}
+
+
+					.video-new iframe{
+
+						min-width: 100%;
+						min-height: 100%;
+						width: auto;
+						height: auto;
+
+						object-fit: contain;
+						object-position: 50% 50%;
+
+
+					}
+
+
+
+
+						/* NEW IMAGES GRID EN*/
+
+
+				.grid-container {
+					display: flex;
+					flex-direction: column;
+					padding: .3em;
+					text-align: left;
+					height: auto;
+
+
+				/*	max-width:560px;
+					max-height:315px;*/
+					/* border-radius: 8px; */
+				}
+
+				.grid-item-video {
+					width: 100%;
+					height:100%;
+					position: relative;
+				}
+
+				.grid-item .image {
+
+					width: 100%;
+					height: 100%;
+					overflow: hidden;
+
+				}
+
+				.grid-item .image {
+
+				}
+
+				.grid-item .image img {
+/*height: auto;*/
+width: 100%;
+height: 100%;
+
+				object-fit: contain;
+				object-position: 50% 50%;
+				border-radius: 25px;
+				transition:.3s ease-in-out;
+
+				cursor: pointer;
+
+				}
+
+				.grid-item .image iframe {
+					/*height: auto;*/
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					object-position: 50% 50%;
+
+				}
+
+				.grid-item:hover .image img{
+
+					transform:scale(1.15);
+				}
+
+
+
+		/*FEATURES*/
+
+			*/a:active {
+			/*text-decoration: underline;
+			}*/}
+
+			/*a:active{
+			background-color: red;
+			}*/
+
+				a {
+				text-decoration: none;
+				}
+
+				a:hover {
+				text-decoration: underline;
+				}
+
+			/*section div {
+				background: gray;
+			}
+			Example: This applies to any div's inside the section tag. You can go as long as you want. Comma applies to more than one
+			*/
+			/*div {
+				background: red;
+				margin: auto;
+				width: 100px;
+			}*/
+
+
+			/*FEATURES RESPONSIVE RULE*/
+				/* doesn't seem to work - but have used flex wrapinstead
+			@media screen and (max-width: 950px) {
+			.feature-box.sales {
+				display: block;
+			}
+			}*/
+
+
+				/*Popup window clicked*/
+
+				.img-window{
+					width: 100vw;
+					height: 100vh;
+					background-color: rgba(0, 0, 0, 0.7);
+					position: fixed;
+					top: 0;
+					left: 0;
+					cursor: pointer;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					z-index: 100;
+				}
+
+				.img-window img{
+					max-height: 80vh;
+					max-width: 80vw;
+				}
+
+				/*Next Image Styling*/
+				.img-btn-next{
+					display: block;
+					padding: 6px 10px;
+					border-radius: 4px;
+					background-color: #111111;
+					position: fixed;
+					top: 48vh;
+					z-index: 500;
+					color: #ffffff;
+					cursor: pointer;
+					text-transform: uppercase;
+
+				}
+
+				.img-btn-next:hover{
+					opacity: 0.8;
+
+				}
+
+				/*Prev Image Styling*/
+				.img-btn-prev{
+					display: block;
+					padding: 6px 10px;
+					border-radius: 4px;
+					background-color: #111111;
+					position: fixed;
+					top: 48vh;
+					z-index: 500;
+					color: #ffffff;
+					cursor: pointer;
+					text-transform: uppercase;
+
+				}
+
+				.img-btn-prev:hover{
+					opacity: 0.8;
+
+				}
+
+				.
+
+
+			/*RESONPONSIVE RULES 950px*/
+
+			@media screen and (max-width:950px) {
+
+				header {
+
+					height:200px;
+					background-position: 0 -200px;
+
+				}
+
+			}
+
+			/*RESONPONSIVE RULES 650px*/
+
+			@media screen and (max-width:650px) {
+
+					header {
+
+						height:150px;
+						background-position: 0 -500px;
+
+					}
+
+					.video-new iframe{
+						width: 75%;
+						height: 75%;
+					}
+
+					.parent-grid{
+					padding-left: 0em;
+					}
+					.documentary-images-grid
+
+					}
+
+			}
+
+			/*FOOTER*/
+			
+			footer {
+
+				padding: 10px 20px;
+
+				color: black;
+				font-size: 25px;
+				text-align: end;
+
+			}
+		}

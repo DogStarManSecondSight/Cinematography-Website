@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>My Page!</title>
+		<link rel="stylesheet" href="styles.css">
+		<script src="jquery/jquery-4.0.0.min.js"></script>
+		 <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+		<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+	</head>
+
+	<body>
+		<header>
+			<div class="bg-image"></div>
+
+			<nav class="navbar">
+				<li><a href="index.html">Home</a></li>
+				<li data-Id="FilmsMenu" class="FilmsDropDown">Films</a>
+					 <div id= "FilmsMenu" style="display:none" class="filmssubnav" >
+						<ul >
+							<li><a href="narrative.html">Narrative</a></li>
+							<li><a href="brandedcontent.html">Branded Content</a></li>
+							<li><a href="musicvideos.html">Music Videos</a></li>
+							<li><a href="documentary.html">Documentary</a></li>
+							<li><a href="artfilm.html">Art Film</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href="skills.html">Skills</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</nav>
+
+<h1 class="MainTitle">
+				<div class="PageTitle">Cameron Brown</div><br>
+
+				<div class="SubTitle">Director of Photography</div>
+
+			</h1>
+
+
+		</header>
+<section class = "main-page">
+		<div class= "container-video">
+		<iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/LSL9E8cyV1o?si=dM8QZzPQE-IQIDMV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+		</div>
+
+
+<section class="about1">
+		<h2>
+			About
+		</h2>
+		<p>Director of Photography based in the North West with experience working in with variety of fields from documentaries to music videos, events and dramas - able to adapt depending on the project. Looking to collaborate with artists, individuals and businesses to create compelling and original visual content. Recent credits include The Little Things (2025), Iron Ladies (2025), Q&A (2026) and The Death of the House Party (2024)</p>
+<img src="images/dopimage_orig.png" alt="dop image" class=dop-image></img>
+
+
+
+
+
+
+<div class= "about-div">
+			<figure>
+
+
+			</figure>
+			</div>
+		</section>
+		</section>
+
+
+
+
+
+
+
+
+
+		<footer><div>Cameron Brown 2026</div></footer>
+		
+		<!-- JavaScript added at end of code -->
+
+		<script src="scripts/main.js"></script>
+
+		<!-- Jquery added at end of code -->
+
+		<!-- <script src="jquery/jquery-4.0.0.min.js"></script> -->
+
+		<script>
+			 $(function(){
+
+			$(".panel-button").on('click', function()
+			{
+			var panelId = $(this).attr('data-panelid');
+
+				//*-- $('#HomeMenu').toggle (); *//
+				//*$('#HomeMenu').slideToggle (3000);*//
+				alert(panelId);
+				$('#'+panelId).toggle();
+
+			});
+
+
+
+			});
+
+			$(function(){
+
+				$(".FilmsDropDown").hover (function()
+				{
+					var FilmsDropDownId = $(this).attr('data-Id');
+
+					//*-- $('#HomeMenu').toggle (); *//
+					//*$('#HomeMenu').slideToggle (3000);*//
+
+					$('#'+FilmsDropDownId).stop().slideToggle(500);
+
+				});
+
+
+
+			});
+
+
+
+		</script>
+
+	</body>
+</html>
